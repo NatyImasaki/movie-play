@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;700&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background: #4b4e69;
+}
+
+.cabecalho {
+    background: #383A50;
+    display: flex;
+    height: 80px;
+    padding: 16px 60px;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: span 2;
+    box-shadow: 0px 4px 4px #333456 ;
+}
+
+.div-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 48px;
+    margin-right: 10px;
+}
+
+.nome-app {
+    font-family: 'Righteous', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    color: #9D84B7;
+}
+
+.nome-app:hover{
+    cursor: pointer;
+}
+
+.div-perfil {
+    display: flex;
+    align-items: center;
+}
+
+.material-icons {
+    font-size: 28px;
+    color: #6F69AC;
+}
+
+.material-icons:hover {
+    cursor: pointer;
+}
+
+.perfil-foto {
+    width: 54px;
+    height: auto;
+}
+
+.perfil {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-weight: 400;
+    color: #9D84B7;
+}
+
+.dropdown-perfil {
+    border-right: 2px solid #9D84B7;
+    padding-right: 10px;
+}
+
+.notificacao {
+    border: none;
+    background: none;
+    padding-left: 10px;
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    grid-column: 1;
+    grid-row: 2 / span 2;
+    background: #333456;
+    box-shadow: 0px 4px 4px #333456 ;
+}
+
+.item_menu-lateral {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-weight: 400;
+    color: #9D84B7;
+    height: 64px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.item_menu-lateral:hover {
+    font-size: 19px;
+}
+
+
+.selecionado {
+    background: #595B83;
+    border-left: 5px solid #9D84B7;
+    color: #333456;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    padding-left: 10px;
+}
+
+.cabecalho-conteudo {
+    display: flex;
+    grid-column: 1 / 5;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 48px;
+    border-bottom: 2px solid #9D84B7 ;
+    margin: 0px 16px 40px 0px;
+
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    color: #9D84B7;
+    font-size: 24px;
+}
+
+.buscar {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #333456;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #333456;
+    background: #616488;
+    padding-left: 5px;
+}
+
+.buscar:focus {
+    background: #747799;
+}
+
+input::placeholder {
+    color: #9D84B7;
+}
+
+.card-filme {
+    justify-self: center;
+    width: 210px;
+    height: auto;
+    background: #616488;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 16px;  
+}
+
+.card-filme:hover {
+    box-shadow: 4px 4px 8px #333456;
+    border: 1px solid #333456;
+    cursor: pointer;
+
+}
+
+.card_nome-filme {
+    margin: 4px 8px 2px 8px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #d8d6d6;
+}
+
+.descricao-filme {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333456;
+    margin: 0px 8px 2px 8px;
+}
+
+.banner {
+    height: 300px;
+    width: 210px;
+    border-radius: 10px 10px 0 0px;
+}
+
+/* .banner:hover {
+    width: 220px;
+} */
